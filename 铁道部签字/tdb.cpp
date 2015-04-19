@@ -70,8 +70,14 @@ int main()
     //cout << p.size() << endl;
     sort(ret.begin(),ret.end());
     reverse(ret.begin(),ret.end());
+    ///////////////////Пезп
     double d = 0;
-
+    int t = 11;
+    d = v / 3.6 * t;
+    for (double i=0;i<d;i+=D)
+        p.pb(mp(i,v / 3.6));
+    p.pb(mp(d,v / 3.6));
+    ///////////////////
     for (int j=0;j<ret.size()-1;j++)
     {
         if (v<=ret[j].F && v>=ret[j+1].F)
